@@ -1,0 +1,89 @@
+body {
+
+}
+
+h2 {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+p {
+  color: darkgray;
+  text-align: center;
+}
+
+.name {
+  text-align: center;
+}
+
+.main-nav {
+  list-style-type: none;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.main-nav a {
+  text-decoration: none;
+  display: block;
+  background-color: lightgray;
+  color: black;
+  margin-bottom: 5px;
+}
+
+.main-footer {
+  border-top: solid 1px lightgray;
+
+}
+
+.profile-image {
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  width: 15%;
+  margin-top: 50px;
+
+}
+
+.banner {
+  background-color: lightgray;
+  width: 60%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.footer-name {
+  float: left;
+  color: black;
+}
+
+.footer-link {
+  float: right;
+}
+
+.footer-link a {
+  text-decoration: none;
+  color: black;
+}
+
+/* ---- Layout Containers ---- */
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* media queries */
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 1024px) {
+
+}
