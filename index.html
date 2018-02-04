@@ -3,6 +3,7 @@
     <head>
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       <title>Jacob Spade</title>
+      <link href="https://fonts.googleapis.com/css?family=Rammetto+One" rel="stylesheet">
       <link rel="stylesheet" href="css/normalize.css" />
       <link rel="stylesheet" href="css/style.css" />
     </head>
@@ -12,58 +13,83 @@
           <h1 class="name">Jacob Spade</h1>
           <ul class="main-nav">
             <li><a href="#">Home</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </header>
 
         <div class="banner col">
           <img src="images/profile_picture.jpeg" class="profile-image" />
         </div>
-        <p class="first col">
+        <p class="col">
           Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!
         </p>
-        <h2>Portfolio</h2>
-        <img src="responsive_layout_v2.0.zip/portfolio-1.png" />
-        <h2>Marketing Page</h2>
-        <p class="second col">
-          This project shows the front page of a marketing website meant for a specific business I'm interested in.
-        </p>
-        <img src="responsive_layout_v2.0.zip/portfolio-2.png" />
-        <h2>Search Page</h2>
-        <p class="third col">
-          This project searches through a specific database to find information that the user is trying to look up.
-        </p>
-        <img src="responsive_layout_v2.0.zip/portfolio-3.png" />
-        <h2>Travel App</h2>
-        <p class="fourth col">
-          This project compares travel times based on different transportation methods that tells you the best one.
-        </p>
-        <img src="responsive_layout_v2.0.zip/portfolio-4.png" />
-        <h2>Map of Favorite Spots</h2>
-        <p class="fifth col">
-          This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour.
-        </p>
-        <img src="responsive_layout_v2.0.zip/portfolio-5.png" />
-        <h2>Photo Gallery</h2>
-        <p class="sixth col">
-          This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.
-        </p>
-        <img src="responsive_layout_v2.0.zip/portfolio-6.png" />
-        <h2>Calculator</h2>
-        <p>
-          Someone can enter in the numbers they want, and press the big blue button and get the result.
-        </p>
-        <h3>Contact</h3>
-        <p class="col">
-          If your interested in chatting or want more information about what I've been working on, I'd love to hear from you!
-        </p>
-        <p>
-          <strong>Phone</strong> (555) 555-5555
-        </p>
-        <p>
-          <strong>Email</strong> Spade.jacob@yahoo.com
-        </p>
+
+      <main class="container">
+        <section id="portfolio">
+          <h2>Portfolio</h2>
+            <div class="first col">
+              <img src="images/portfolio-1.png" class="image" />
+              <h2>Marketing Page</h2>
+              <p>
+                This project shows the front page of a marketing website meant for a specific business I'm interested in.
+              </p>
+            </div>
+
+            <div class="second col">
+              <img src="images/portfolio-2.png" class="image" />
+              <h2>Search Page</h2>
+              <p>
+                This project searches through a specific database to find information that the user is trying to look up.
+              </p>
+            </div>
+
+            <div class="third col">
+              <img src="images/portfolio-3.png"  class="image"/>
+              <h2>Travel App</h2>
+              <p>
+                This project compares travel times based on different transportation methods that tells you the best one.
+              </p>
+            </div>
+
+            <div class="fourth col">
+              <img src="images/portfolio-4.png"  class="image"/>
+              <h2>Map of Favorite Spots</h2>
+              <p>
+                This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour.
+              </p>
+            </div>
+
+            <div class="fifth col">
+              <img src="images/portfolio-5.png"  class="image"/>
+              <h2>Photo Gallery</h2>
+              <p>
+                This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.
+              </p>
+            </div>
+
+            <div class="sixth col">
+              <img src="images/portfolio-6.png" class="image" />
+              <h2>Calculator</h2>
+              <p>
+                Someone can enter in the numbers they want, and press the big blue button and get the result.
+              </p>
+            </div>
+          </section>
+
+          <section id="contact">
+            <h3 class="contact">Contact</h3>
+            <p>
+              If your interested in chatting or want more information about what I've been working on, I'd love to hear from you!
+            </p>
+            <p>
+              <strong>Phone</strong> (555) 555-5555
+            </p>
+            <p>
+              <strong>Email</strong> <a href="mailto:spade.jacob@Yahoo.com" class="email">Spade.jacob@yahoo.com</a>
+            </p>
+          </section>
+        </main>
         <footer class="main-footer">
           <p class="footer-name">
             Jacob Spade
