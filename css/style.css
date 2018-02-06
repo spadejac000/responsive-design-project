@@ -1,11 +1,10 @@
-
-
 body {
 
 }
 
 h1 {
   font-family: 'Rammetto One', cursive;
+  margin-top: 0;
 }
 
 h2 {
@@ -35,9 +34,12 @@ p {
   text-align: center;
   margin-bottom: 1em;
   font-family: 'Rammetto One', cursive;
+  background-color: lightblue;
+  box-shadow: 3px 3px 3px black;
 }
 
 .name {
+  padding-top: 10px;
   text-align: center;
 }
 
@@ -49,10 +51,13 @@ p {
 
 .main-nav a {
   text-decoration: none;
-  background-color: lightgray;
   color: black;
   margin-bottom: 5px;
   display: block;
+}
+
+.bottom-nav {
+  display: none;
 }
 
 .main-footer {
@@ -84,6 +89,7 @@ p {
 }
 
 .footer-name {
+  margin-left: 5px;
   float: left;
   color: black;
 }
@@ -97,6 +103,10 @@ p {
   color: black;
 }
 
+.top-link {
+  margin-right: 5px;
+}
+
 /* ---- Layout Containers ---- */
 
 .wrapper {
@@ -108,19 +118,46 @@ p {
 
 @media (min-width: 768px) {
 
-body {
-  width: 90%;
-  margin: 0 auto;
-}
+ .wrapper {
+   width: 80%;
+   margin: 0 auto;
+ }
+
+ .footer-name {
+   margin-left: 1em;
+ }
+
 .name,
 .main-nav li {
   display: inline-block;
-  background-color: white;
+  background-color: none;
   }
 
 .main-nav li {
   margin-right: 12px;
 }
+
+  .bottom-nav {
+    margin-top: 1em;
+    display: inline-block;
+    background-color: white;
+    margin-right: 12px;
+    float: right;
+    display: inline-block;
+  }
+
+  .bottom-nav li {
+    display: inline;
+    margin-left: 1em;
+  }
+
+  .bottom-nav a {
+    text-decoration: none;
+    color: black;
+    margin-bottom: 5px;
+    display: inline;
+    font-family: 'Rammetto One', cursive;
+  }
 
 
   .banner {
@@ -135,10 +172,10 @@ body {
 
   .col {
     display: inline-block;
-    width: 50%;
+    width: 45%;
     margin-right: -40px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 1em;
+    padding-right: 1em;
     vertical-align: top;
   }
 
@@ -170,6 +207,10 @@ body {
     margin-right: auto;
     display: block;
   }
+
+  .top-link {
+    display: none;
+  }
 }
 
 
@@ -178,6 +219,14 @@ body {
 
   .name {
     float: left;
+  }
+
+  .main-header {
+    text-align: center;
+    margin-bottom: 1em;
+    font-family: 'Rammetto One', cursive;
+    background-color: lightblue;
+    box-shadow: 3px 3px 3px black;
   }
 
   .main-nav {
@@ -195,5 +244,6 @@ body {
     width: 33%;
     padding-left: 1em;
     padding-right: 1em;
+    border: 1px solid red;
   }
 }
