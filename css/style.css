@@ -10,6 +10,7 @@ h1 {
 h2 {
   text-align: center;
   font-family: 'Rammetto One', cursive;
+  margin-top: 1em;
 }
 
 h3 {
@@ -18,7 +19,7 @@ h3 {
 }
 
 p {
-  color: darkgray;
+  color: #a9a9a9;
   text-align: center;
   font-family: 'Rammetto One', cursive;
 }
@@ -34,7 +35,7 @@ p {
   text-align: center;
   margin-bottom: 1em;
   font-family: 'Rammetto One', cursive;
-  background-color: lightblue;
+  background-color: #add8e6;
   box-shadow: 3px 3px 3px black;
 }
 
@@ -61,7 +62,7 @@ p {
 }
 
 .main-footer {
-  border-top: solid 1px lightgray;
+  border-top: solid 1px #a9a9a9;
 
 }
 
@@ -72,20 +73,20 @@ p {
   margin-right: auto;
   padding-top: 1em;
   padding-bottom: 1em;
-  width: 15%;
-
+  width: 50%;
 }
 
 .banner {
-  background-color: lightgray;
-  width: 60%;
+  background-color: #a9a9a9;
   margin-right: auto;
   margin-left: auto;
+  margin-bottom: 1em;
+  margin-top: 1em;
 }
 
 .email {
   text-decoration: none;
-  color: darkgray;
+  color: #a9a9a9;
 }
 
 .footer-name {
@@ -118,6 +119,10 @@ p {
 
 @media (min-width: 768px) {
 
+  h2 {
+    margin-bottom: 1em;
+  }
+
  .wrapper {
    width: 80%;
    margin: 0 auto;
@@ -130,12 +135,15 @@ p {
 .name,
 .main-nav li {
   display: inline-block;
-  background-color: none;
   }
 
 .main-nav li {
   margin-right: 12px;
 }
+
+  .portfolio {
+
+  }
 
   .bottom-nav {
     margin-top: 1em;
@@ -159,30 +167,41 @@ p {
     font-family: 'Rammetto One', cursive;
   }
 
+  .intro {
+    width: 40%;
+    margin-bottom: 2em;
+    padding-top: 2em;
+  }
 
   .banner {
     float: right;
     margin-left: 1em;
     margin-top: 1em;
+    margin-bottom: 1em;
+  }
+
+  .top-part {
+    margin-bottom: 8em;
+    width: 90%;
   }
 
   .container {
     width: 90%;
+    margin-top: 1em;
   }
 
   .col {
     display: inline-block;
     width: 45%;
     margin-right: -40px;
-    padding-left: 1em;
-    padding-right: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
     vertical-align: top;
   }
 
 .first,
   .third,
   .fifth {
-    float: left;
     width: 50%;
     padding-left: 1em;
     padding-right: 1em;
@@ -191,7 +210,6 @@ p {
   .second,
   .fourth,
   .sixth {
-    float: right;
   }
 
   h3 {
@@ -217,8 +235,13 @@ p {
 
 @media (min-width: 1024px) {
 
+  .wrapper {
+    width: 90%;
+  }
+
   .name {
     float: left;
+    margin-left: 2em;
   }
 
   .main-header {
@@ -235,15 +258,60 @@ p {
     margin-top: 2em;
   }
 
+  .top-wrapper {
+    margin-bottom: 1em;
+    width: 90%;
+  }
+
+  .top-part {
+    margin-bottom: 1em;
+    width: 90%;
+  }
+
+  .intro {
+    margin-bottom: 1em;
+    float: left;
+    width: 50%;
+    font-size: 25px;
+  }
+
+  .portfolio {
+    text-align: center;
+    clear: both;
+  }
+
+  .col {
+    margin-left: 1px;
+    margin-right: 1px;
+  }
+
+  .banner {
+    width: 40%;
+    margin-top: 1em;
+    float: right;
+    clear: both;
+    margin-bottom: 2em;
+  }
+
   .first,
   .second,
   .third,
   .fourth,
   .fifth,
   .sixth {
-    width: 33%;
-    padding-left: 1em;
-    padding-right: 1em;
-    border: 1px solid red;
+    width: 30%;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .wrap {
+    min-height: 1080px;
+  }
+
+  .contact {
+  }
+
+  .main-footer {
+    min-height: calc(100vh - 850px);
   }
 }
